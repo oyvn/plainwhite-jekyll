@@ -116,7 +116,6 @@ main {
 .social {
   list-style-type: none;
   padding: 0;
-  margin-top: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -155,6 +154,20 @@ main {
       @media screen and (max-width: $mobileW) {
         padding: 2rem 0;
       }
+    }
+  }
+}
+.about {
+  .about-footer {
+    @media screen and (max-width: $mobileW) {
+      display: none !important;
+    }
+  }
+}
+footer {
+  .about-footer {
+    @media screen and (min-width: $mobileW + 1) {
+      display: none !important;
     }
   }
 }
@@ -276,4 +289,15 @@ table {
     background-color: #eee;
     font-family: Raleway;
   }
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 40px;
+  @media screen and (max-width: $smallMobileW){
+    margin: 0 20px;
+  }
+  border-top: 1px solid #eee;
 }

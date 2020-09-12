@@ -8,7 +8,9 @@
 <body>
   <main class="container">
     <section class="about">
+      {%- if site.plainwhite.condensed_mobile -%}
       <div class="about-header">
+      {%- endif -%}
       <div class="about-title">
       <a href="{{ "/" | relative_url}}"><img src="{{site.baseurl }}/{{ site.plainwhite.portfolio_image }}" alt="{{ site.plainwhite.name }}"></a>
       <h2 id="title">
@@ -18,7 +20,9 @@
       {%- if site.plainwhite.tagline -%}
       <p class="tagline">{{ site.plainwhite.tagline }}</p>
       {%- endif -%}
+      {%- if site.plainwhite.condensed_mobile -%}
       </div>
+      {%- endif -%}
       {% capture footer %}
       {%- if site.plainwhite.social_links != '' -%}
       <ul class="social about-footer">

@@ -115,6 +115,16 @@ plainwhite:
       url: "/resume"
 ```
 
+**Mobile**
+
+By default, Plainwhite places the logo, name, and tagline above the content on mobile (narrow screens).
+To condense them so they take up less space, add the following to your `_config.yml`:
+
+```yaml
+plainwhite:
+  condensed_mobile: true
+```
+
 **Dark mode**
 
 Dark mode can be enabled by setting the `dark_mode` flag in your `_config.yml`

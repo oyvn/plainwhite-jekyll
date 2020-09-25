@@ -81,10 +81,10 @@ main {
     padding-bottom: 15vh;
     @media screen and (max-width: $mobileW) {
       height: auto;
-      padding: 5vh 30px;
+      padding: 3vh 30px;
     }
     @media screen and (max-width: $smallMobileW) {
-      padding: 5vh 20px;
+      padding: 3vh 20px;
     }
     @media screen and (min-width: $mobileW + 1) {
       position: fixed;
@@ -306,7 +306,7 @@ footer {
       align-self: start;
       .about-title {
         flex-direction: row;
-        margin-bottom: 10px;
+        margin-bottom: 0px;
         img {
           max-height: 40px;
         }
@@ -317,6 +317,7 @@ footer {
       .tagline {
         font-size: 18px;
         margin-bottom: 0px;
+        margin-top: 10px;
       }
     }
     .about-footer.condensed {
